@@ -1,0 +1,100 @@
+/* font-family: 'Galada', cursive;
+font-family: 'Libre Franklin', sans-serif; */
+/* font-family: 'Lobster', cursive; */
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: grey;
+
+}
+.question{
+    font-family: 'Lobster', cursive;
+    color: #777777; 
+}
+
+#myJumbo{
+    padding: 10px;
+    font-family: 'sans-serif', cursive;
+    text-align: center;
+    background: #ffffff;
+    color: #da9f96; 
+    box-shadow: 2px 2px 5px 0px grey; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.502);
+}
+h6{
+    text-align: center;
+    font-size: 12px;
+    text-decoration-color: #777777;
+}
+
+#tagone{
+    color: #dcb699;
+}
+
+#tagtwo{
+    color: #dcb699b5;
+}
+
+label.form-check-label{
+    padding: 10px;
+}
+
+input.form-check-input{
+    margin-left: 1rem !important;
+}
+
+#questionBox{
+    margin: 50px auto;
+    width: 50%;
+    padding: 10px;
+    text-shadow: 1px 1px 4px #ffffff;
+    background: white;
+    /* border: 2px solid #da9f96;  */
+    box-shadow: 0px 0px 10px 5px #da9f96; 
+}
+
+
+button.submit{
+    background:teal; 
+}
+
+#myHomeJumbo{
+    padding-top: 100px;
+    font-family: 'sans-serif', cursive;
+    text-align: center;
+    background: #ffffff;
+    color: #666666; 
+}
+#frontBox{
+    padding-top: 100px;
+}
+#frontOne{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.502);
+}
+
+a.footer{
+    color: #da9f96; 
+}
+a.footer:hover{
+    color: #da9f96; 
+    letter-spacing: 0.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #questionBox{
+        width:100%;
+    }
+    .display-3{
+        padding-top:10px;
+        font-size:3rem !important;
+    }
+    .display-1{
+        font-size:2rem !important;
+    }
+    #myHomeJumbo{
+        text-align:center;
+    }
+    #homeContainer{
+        width:75%;
+    }
+
+} 

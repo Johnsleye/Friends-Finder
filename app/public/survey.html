@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Friend Finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Galada|Libre+Franklin|Lobster" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid" id="myJumbo">
+        <div class="container">
+            <h1 class="display-3">Friend Finder</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="questionBox">
+        <div id="questions">
+            <div class="form-group">
+                <label class="question" for="friendName">
+                    <h4>Name</h4>
+                </label>
+                <input type="text" class="form-control" name="" id="friendName" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label class="question" for="friendPhoto">
+                    <h4>Photo</h4>
+                </label>
+                <input type="text" class="form-control" name="" id="friendPhoto" placeholder="" required>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label ">
+                    <h4 class="question">I like to cook.</h4>
+                    <input class="form-check-input answer" type="radio" name="one" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="one" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="one" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="one" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="one" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I am high-strung.</h4>
+                    <input class="form-check-input answer" type="radio" name="two" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="two" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="two" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="two" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="two" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I consider myself spoiled.</h4>
+                    <input class="form-check-input answer" type="radio" name="three" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="three" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="three" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="three" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="three" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I love food.</h4>
+                    <input class="form-check-input answer" type="radio" name="four" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="four" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="four" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="four" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="four" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I am smart.</h4>
+                    <input class="form-check-input answer" type="radio" name="five" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="five" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="five" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="five" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="five" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I enjoy sports.</h4>
+                    <input class="form-check-input answer" type="radio" name="six" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="six" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="six" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="six" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="six" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I am sarcastic.</h4>
+                    <input class="form-check-input answer" type="radio" name="seven" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="seven" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="seven" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="seven" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="seven" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I like running.</h4>
+                    <input class="form-check-input answer" type="radio" name="eight" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="eight" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="eight" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="eight" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="eight" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I like to perform.</h4>
+                    <input class="form-check-input answer" type="radio" name="nine" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="nine" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="nine" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="nine" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="nine" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <h4 class="question">I like things to be organized.</h4>
+                    <input class="form-check-input answer" type="radio" name="ten" id="" value="1" required> 1 - strongly disagree
+                    <input class="form-check-input answer" type="radio" name="ten" id="" value="2"> 2
+                    <input class="form-check-input answer" type="radio" name="ten" id="" value="3"> 3
+                    <input class="form-check-input answer" type="radio" name="ten" id="" value="4"> 4
+                    <input class="form-check-input answer" type="radio" name="ten" id="" value="5"> 5 - strongly agree
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-light submit">Submit</button>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Match" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Friend Finder Result</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" id="closeBtn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModalError" tabindex="-1" role="dialog" aria-labelledby="Error" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Friend Finder</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Please answer all questions to discover your best friend match.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" id="OKBtn" data-dismiss="modal">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/friends" class="footer" target="_blank">API Friends Link</a> |
+                <a href="https://github.com/Johnsleye/Friend-Finder" class="footer" target="_blank">GitHub Repo</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script type="text/javascript">
+$('#myModal').modal('hide')
+$('#myModalError').modal('hide');
+    var answerArray = [];
+    var friendCompareArray = [];
+    var allFriendScores = [];
+    $('.submit').on('click', function (event) {
+        event.preventDefault();
+        var qOne = ($('input[name="one"]:checked').val());
+        var qTwo = ($('input[name="two"]:checked').val());
+        var qThree = ($('input[name="three"]:checked').val());
+        var qFour = ($('input[name="four"]:checked').val());
+        var qFive = ($('input[name="five"]:checked').val());
+        var qSix = ($('input[name="six"]:checked').val());
+        var qSeven = ($('input[name="seven"]:checked').val());
+        var qEight = ($('input[name="eight"]:checked').val());
+        var qNine = ($('input[name="nine"]:checked').val());
+        var qTen = ($('input[name="ten"]:checked').val());
+        answerArray.push(qOne, qTwo, qThree, qFour, qFive, qSix, qSeven, qEight, qNine, qTen);
+        console.log(answerArray);
+        var newFriend = {
+            "name": $('#friendName').val().trim(),
+            "photo": $('#friendPhoto').val().trim(),
+            "scores": answerArray
+        }
+        $.post("/api/friends", newFriend, function (data) {
+            if ($('input[type=radio]:checked').length < 9||
+                $('#friendName').val().trim() === "" ||
+                $('#friendPhoto').val().trim() === "") {
+                console.log("not all Qs answered");
+                $('#myModalError').modal('show');
+            } else {
+                console.log("all Q's answered");
+                console.log(newFriend);
+                findFriend(newFriend);
+                answerArray = [];
+                console.log(friendCompareArray);
+            }
+        });
+        answerArray = [];
+    })
+    var findFriend = (newFriend) => {
+        var currentURL = window.location.origin;
+        console.log(currentURL);
+        $.ajax({
+                url: currentURL + "/api/friends",
+                method: "GET"
+            })
+            .then(function (data) {
+                console.log(currentURL + "/api/friends");
+                console.log(data);
+                for (var i = 0; i < 6; i++) {
+                    console.log(data[i]);
+                    console.log(data[i].scores);
+                    friendCompare(newFriend, data[i])
+                    console.log(`all differences: ${allFriendScores}`);
+                    var bestFriendNumb = allFriendScores.indexOf(Math.min.apply(Math,allFriendScores));
+                    bestFriend = data[bestFriendNumb];
+                    $('.modal-body').text(`Your friend match is ${bestFriend.name}`);
+                    var img = $(`<img src=${bestFriend.photo} class='img-fluid'>`);
+                    $('.modal-body').append(img);
+                    $('#myModal').modal('show');
+                    $('#closeBtn').on('click',function(){
+                        location.reload();
+                    })
+                }
+            });
+        var friendCompare =
+            (newFriend, Friend) => {
+                var total = 0;
+                var friendSumArray = [];
+                for (var i = 0; i < 10; i++) {
+                    var friendDiffIt = Math.abs(newFriend.scores[i] - Friend.scores[i]);
+                    friendSumArray.push(friendDiffIt);
+                }
+                        for (var j = 0; j < friendSumArray.length; j++) {
+                            total += friendSumArray[j];
+                        };
+                        console.log (friendSumArray);
+                        console.log(total);
+                        allFriendScores.push(total);
+            }
+    }
+</script>
